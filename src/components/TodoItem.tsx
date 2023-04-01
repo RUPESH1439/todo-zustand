@@ -40,9 +40,10 @@ const TodoItem: FunctionComponent<TodoItemProps> = ({ todo }) => {
           setChecked(e.target.checked)
         }}
       />
-      <Input ref={inputRef} />
+      <Input ref={inputRef} fontSize={['sm', 'md']} />
       <Button
         bg={theme.colors.secondary.main}
+        fontSize={['sm', 'medium']}
         width={120}
         onClick={() => {
           updateTodo(id, inputRef.current?.value, checked)
@@ -52,6 +53,7 @@ const TodoItem: FunctionComponent<TodoItemProps> = ({ todo }) => {
       </Button>
       <Button
         width={120}
+        fontSize={['sm', 'medium']}
         bg={theme.colors.error.main}
         onClick={() => {
           deleteTodo(id)

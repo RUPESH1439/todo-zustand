@@ -11,11 +11,12 @@ const TodoList: FunctionComponent<TodoListProps> = () => {
   const theme = useTheme()
   return (
     <Box>
-      <Text fontSize='3xl' mb='5'>
+      <Text fontSize={['xl', '3xl']} mb='5'>
         Todo List
       </Text>
       <Flex flexDirection='row' gap={5}>
         <Input
+          fontSize={['sm', 'md']}
           placeholder='Add a new todo'
           mb='5'
           ref={inputRef}
@@ -28,6 +29,7 @@ const TodoList: FunctionComponent<TodoListProps> = () => {
         <Button
           variant='solid'
           width={250}
+          fontSize={['sm', 'medium']}
           bg={theme.colors.primary.main}
           onClick={() => {
             const _ref = inputRef.current

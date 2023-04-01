@@ -9,8 +9,8 @@ function App() {
       flexDirection='column'
       height='100vh'
       width='100vw'
-      px='40'
-      py='20'
+      px={['5', '40']}
+      py={['5', '20']}
     >
       <TodoList />
     </Flex>
